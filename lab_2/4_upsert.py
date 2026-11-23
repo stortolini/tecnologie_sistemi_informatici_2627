@@ -4,8 +4,8 @@ Prima di eseguire questo script:
     1. Vai su app.pinecone.io e crea un indice con questi parametri:
          Nome:        try
          Schema:      campo "embedding", tipo Dense vector, 384 dim, cosine
-    2. Scrivi le tue frasi nella lista MIE_FRASI
-    3. Scegli un nome univoco (il tuo nome) in NOME
+    2. Rinomina costanti.example.py → costanti.py e compila i tuoi valori
+    3. Esegui:
 
     uv run 4_upsert.py
 
@@ -16,22 +16,7 @@ Dipendenze:
 
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
-
-# =============================================================================
-# MODIFICA QUESTA SEZIONE
-# =============================================================================
-
-API_KEY = "pcsk_2ViYYa_BQ74kPM5tDYMcLdRd9trgoWsG9uRuWzQ5diJz9bQWsdbzzCCCHBDjFyNZuPTwLZ"   # copia la tua API key da app.pinecone.io
-
-NOME = "sofia"               # il tuo nome: diventa il prefisso degli ID e il campo "autore"
-
-MIE_FRASI = [
-    "vorrei il nuovo GTA VI",
-    "Avrei davvero bisogno di un nuovo PC",
-    "I miei studenti usano Baldur's Gate e nomi assurdi come nickname!"
-]
-
-# =============================================================================
+from costanti import API_KEY, NOME, MIE_FRASI
 
 INDEX_NAME = "laboratorio"
 MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"

@@ -9,12 +9,11 @@ Dipendenze:
 
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
+from costanti import API_KEY
 
 # =============================================================================
 # MODIFICA QUESTA SEZIONE
 # =============================================================================
-
-API_KEY = "pcsk_2ViYYa_BQ74kPM5tDYMcLdRd9trgoWsG9uRuWzQ5diJz9bQWsdbzzCCCHBDjFyNZuPTwLZ"   # la stessa chiave usata in 4_upsert.py
 
 MIA_QUERY = "allenamento in palestra"   # scrivi qui la frase che vuoi cercare
 

@@ -377,6 +377,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pinecone" },
     { name = "rank-bm25" },
+    { name = "sentence-transformers" },
 ]
 
 [package.metadata]
@@ -384,6 +385,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.5.5" },
     { name = "pinecone", specifier = ">=10.3.0" },
     { name = "rank-bm25", specifier = ">=0.2.2" },
+    { name = "sentence-transformers", specifier = ">=6.3.0" },
 ]
 
 [[package]]

@@ -1,0 +1,9 @@
+[project]
+name = "lab-2"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.5",
+    "pinecone>=10.3.0",
+    "rank-bm25>=0.2.2",
+]

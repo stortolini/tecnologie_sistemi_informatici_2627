@@ -1,0 +1,7 @@
+[tool.uv.workspace]
+members = ["lab_*"]
+
+[dependency-groups]
+dev = [
+    "numpy>=2.5.5",
+]

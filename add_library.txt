@@ -1,0 +1,11 @@
+Aggiungere una libreria (es. numpy al lab_1):
+uv add numpy --package lab-1
+Questo aggiorna lab_1/pyproject.toml e uv.lock automaticamente. 
+Non serve uv sync dopo — uv add lo fa già.
+
+Scrivere codice in lab_1/main.py e poi eseguirlo:
+uv run python lab_1/main.py
+
+Quando qualcun altro riceve lo zip, fa solo:
+uv sync
+uv run python lab_1/main.py
